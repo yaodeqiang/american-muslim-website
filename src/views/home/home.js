@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import style from './home.scss';
-import HeaderNav from '@components/home/header/menuNav';
+import style from './home.module.scss';
+import MenuNav from '../../components/home/header/menuNav';
 
 class Home extends Component {
     render() {
         return (
-            <div className={style.home-page}>
-                <HeaderNav/>
+            <div className={style.homepage}>
+                <MenuNav/>
             </div>
         )
     }

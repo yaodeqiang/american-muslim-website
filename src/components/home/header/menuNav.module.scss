@@ -1,0 +1,23 @@
+.headercontroller {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+
+    .headerbox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 15px;
+
+        .logo {
+            width: auto;
+            height: 53px;
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+    }
+}
