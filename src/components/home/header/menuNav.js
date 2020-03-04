@@ -9,7 +9,7 @@ class MenuNav extends Component {
             <header className={style.headercontroller}>
                 <div className={style.headerbox}>
                     <div className={style.logo}>
-                        <img src={require('../../../assets/images/logo.png')}/>
+                        <img src={require('../../../assets/images/logo.png')} alt=""/>
                     </div>
                     <Search
                         placeholder="请输入要搜索的内容"
