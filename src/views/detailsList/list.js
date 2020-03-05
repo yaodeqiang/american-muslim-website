@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './details.scss';
+import './style.scss';
 
-class Details extends Component {
+class List extends Component {
     render(){
         return (
             <div>
@@ -11,4 +11,4 @@ class Details extends Component {
     }
 }
 
-export default Details
+export default List

@@ -4,6 +4,7 @@ import 'swiper/css/swiper.min.css';
 import $ from 'jquery';
 import { Icon } from 'antd';
 import { Player, ControlBar } from 'video-react';
+import 'video-react/dist/video-react.css';
 import './header.scss';
 
 class Header extends Component {
@@ -11,7 +12,8 @@ class Header extends Component {
         super(props)
         
         this.state = {
-          isPlay: true
+          isPlay: true,
+          imgSwiper: []
         }
     
         this.videoPlayer = React.createRef();
@@ -19,6 +21,10 @@ class Header extends Component {
     }
 
     componentDidMount(){
+        this.setState({
+            imgSwiper: ['/static/media/slider-left-img.c69f877b.png', '/static/media/slider-left-img.c69f877b.png']
+        })
+
         new Swiper('.swiper-container', {
             loop: true,
             autoplay: true
@@ -52,8 +58,13 @@ class Header extends Component {
         })
     }
 
+    goDetailsList(){
+        this.props.history.push({pathname: '/details-list'})
+    }
+
     render() {
         const isPlay = this.state.isPlay;
+        const imgSwiper = this.state.imgSwiper;
 
         return (
             <div className="header-box">
@@ -63,16 +74,17 @@ class Header extends Component {
                             <div className="col-md-3 wow slideInLeft">
                                 <div className="swiper-container" style={{height:'100%'}}>
                                     <div className="swiper-wrapper owl-carousel" id="bannerSliderLeft">
-                                        <div className="swiper-slide item">
-                                            <img src={require('../../../assets/images/slider-left-img.png')} alt="" className="w-100"/>
-                                        </div>
-                                        <div className="swiper-slide item">
-                                            <img src={require('../../../assets/images/slider-left-img.png')} alt="" className="w-100"/>
-                                        </div>
+                                        {imgSwiper.map((item,index)=>{
+                                            return (
+                                                <div className="swiper-slide item" key={index}>
+                                                    <img src={item} alt="" className="w-100"/>
+                                                </div>
+                                            )
+                                        })}
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-9 wow slideInRight" style={{paddingLeft:'0px'}} id="videoPlayer">
+                            <div className="col-md-9 wow slideInRight" style={{paddingLeft:'0px',paddingRight:'0px'}} id="videoPlayer">
                                 {/*背景视频*/}
                                 <Player
                                     className="video-module"
@@ -91,6 +103,47 @@ class Header extends Component {
                                 {isPlay ? 
                                 <Icon type="pause-circle" style={{fontSize:'56px',color:'#AEAEAE'}} onClick={(e) => this.goPause(e)}/> 
                                 : <Icon type="play-circle" style={{fontSize:'56px', color:'#AEAEAE'}} onClick={(e) => this.goPlay(e)}/>}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="slider-bottom-section">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-md-3"></div>
+                            <div className="col-md-9">
+                                <ul className="slider-bottom-services d-flex justify-content-between">
+                                    <li className="wow flipInX" onClick={() => this.goDetailsList()}>
+                                        <a href="javascript:;">
+                                            <img src={require('../../../assets/images/slider-b-img1.png')} alt=""/>
+                                            <span className="slb-title">Physicians</span>
+                                        </a>
+                                    </li>
+                                    {/* <li className="wow flipInY">
+                                        <a href="javascript:;">
+                                            <img src={require('../../../assets/images/slider-b-img2.png')} alt=""/>
+                                            <span className="slb-title">Lawyers </span>
+                                        </a>
+                                    </li>
+                                    <li className="wow flipInX">
+                                        <a href="javascript:;">
+                                            <img src={require('../../../assets/images/slider-b-img3.png')} alt=""/>
+                                            <span className="slb-title">Restaurants</span>
+                                        </a>
+                                    </li>
+                                    <li className="wow flipInY">
+                                        <a href="javascript:;">
+                                            <img src={require('../../../assets/images/slider-b-img4.png')} alt=""/>
+                                            <span className="slb-title">Jobs available</span>
+                                        </a>
+                                    </li>
+                                    <li className="wow flipInX">
+                                        <a href="javascript:;">
+                                            <img src={require('../../../assets/images/slider-b-img5.png')} alt=""/>
+                                            <span className="slb-title">Looking for work</span>
+                                        </a>
+                                    </li> */}
+                                </ul>
                             </div>
                         </div>
                     </div>
