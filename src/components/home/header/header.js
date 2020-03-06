@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Swiper from 'swiper/js/swiper.js';
 import 'swiper/css/swiper.min.css';
 import $ from 'jquery';
@@ -12,8 +13,7 @@ class Header extends Component {
         super(props)
         
         this.state = {
-          isPlay: true,
-          imgSwiper: []
+          isPlay: true
         }
     
         this.videoPlayer = React.createRef();
@@ -21,10 +21,6 @@ class Header extends Component {
     }
 
     componentDidMount(){
-        this.setState({
-            imgSwiper: ['/static/media/slider-left-img.c69f877b.png', '/static/media/slider-left-img.c69f877b.png']
-        })
-
         new Swiper('.swiper-container', {
             loop: true,
             autoplay: true
@@ -58,10 +54,6 @@ class Header extends Component {
         })
     }
 
-    goDetailsList(){
-        this.props.history.push({pathname: '/details-list'})
-    }
-
     render() {
         const isPlay = this.state.isPlay;
         const imgSwiper = this.state.imgSwiper;
@@ -74,13 +66,12 @@ class Header extends Component {
                             <div className="col-md-3 wow slideInLeft">
                                 <div className="swiper-container" style={{height:'100%'}}>
                                     <div className="swiper-wrapper owl-carousel" id="bannerSliderLeft">
-                                        {imgSwiper.map((item,index)=>{
-                                            return (
-                                                <div className="swiper-slide item" key={index}>
-                                                    <img src={item} alt="" className="w-100"/>
-                                                </div>
-                                            )
-                                        })}
+                                        <div className="swiper-slide item">
+                                            <img src={require('../../../assets/images/slider-left-img.png')} alt="" className="w-100" />
+                                        </div>
+                                        <div className="swiper-slide item">
+                                            <img src={require('../../../assets/images/slider-left-img.png')} alt="" className="w-100" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -113,13 +104,17 @@ class Header extends Component {
                             <div className="col-md-3"></div>
                             <div className="col-md-9">
                                 <ul className="slider-bottom-services d-flex justify-content-between">
-                                    <li className="wow flipInX" onClick={() => this.goDetailsList()}>
-                                        <a href="javascript:;">
-                                            <img src={require('../../../assets/images/slider-b-img1.png')} alt=""/>
-                                            <span className="slb-title">Physicians</span>
-                                        </a>
+                                    <li className="wow flipInX">
+                                        <Router>
+                                            <Link to="/details-list">
+                                                <a href="javascript:;">
+                                                    <img src={require('../../../assets/images/slider-b-img1.png')} alt=""/>
+                                                    <span className="slb-title">Physicians</span>
+                                                </a>
+                                            </Link>
+                                        </Router>
                                     </li>
-                                    {/* <li className="wow flipInY">
+                                    <li className="wow flipInY">
                                         <a href="javascript:;">
                                             <img src={require('../../../assets/images/slider-b-img2.png')} alt=""/>
                                             <span className="slb-title">Lawyers </span>
@@ -142,7 +137,7 @@ class Header extends Component {
                                             <img src={require('../../../assets/images/slider-b-img5.png')} alt=""/>
                                             <span className="slb-title">Looking for work</span>
                                         </a>
-                                    </li> */}
+                                    </li>
                                 </ul>
                             </div>
                         </div>
