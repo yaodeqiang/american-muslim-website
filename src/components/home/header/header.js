@@ -107,10 +107,8 @@ class Header extends Component {
                                     <li className="wow flipInX">
                                         <Router>
                                             <Link to="/details-list">
-                                                <a href="javascript:;">
-                                                    <img src={require('../../../assets/images/slider-b-img1.png')} alt=""/>
-                                                    <span className="slb-title">Physicians</span>
-                                                </a>
+                                                <img src={require('../../../assets/images/slider-b-img1.png')} alt=""/>
+                                                <span className="slb-title">Physicians</span>
                                             </Link>
                                         </Router>
                                     </li>

@@ -1,0 +1,92 @@
+.clasifd-section-home {
+    background: #eef1fd;
+    margin-top: 52px;
+    padding-bottom: 40px;
+    
+    .container-fluid {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .bootto-col2 {
+        margin-top: 96px;
+    }
+
+    .ob-title1-all {
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 20px;
+        margin-top: -44px;
+        margin-bottom: 0px;
+    }
+
+    .doctor-collum .rows {
+        padding: 15px;
+        border: 1px solid #e0e0e0;
+        background: #fff;
+        position: relative;
+    }
+
+    .view-all {
+        background: #7c431c;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        padding: 9px 0;
+        align-items: center;
+        font-size: 13px;
+        transition: 0.5s;
+    }
+
+    /*标题颜色*/
+    .physicians-a, .ob-title1{
+        background: #7c431c;
+    }
+
+    .physicians-a:hover {
+        background: #502303;
+    }
+
+    .lawyers-a, .ob-title2{
+        background: #677c1c;
+    }
+
+    .lawyers-a:hover {
+        background: #3b4b02;
+    }
+
+    .rentals-a{
+        background: #7c1c59;
+    }
+
+    .rentals-a:hover{
+        background: #5a103f;
+    }
+
+    .restaurants-a, .ob-title3{
+        background: #1c527c;
+    }
+
+    .ob-title4 {
+        background: #4e1c7c;
+    }
+
+    .ob-title5 {
+        background: #7c1c59;
+    }
+
+    .ob-title6 {
+        background: #7c571c;
+    }
+
+    .ob-title7 {
+        background: #1c7c3e;
+    }
+
+    .accountants-a {
+        background: #1c7c3e;
+    }
+}
+

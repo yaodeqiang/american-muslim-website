@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './routers';
 import './assets/css/reset.css';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.css';
