@@ -56,7 +56,6 @@ class Header extends Component {
 
     render() {
         const isPlay = this.state.isPlay;
-        const imgSwiper = this.state.imgSwiper;
 
         return (
             <div className="header-box">
@@ -113,25 +112,25 @@ class Header extends Component {
                                         </Router>
                                     </li>
                                     <li className="wow flipInY">
-                                        <a href="javascript:;">
+                                        <a href="#!">
                                             <img src={require('../../../assets/images/slider-b-img2.png')} alt=""/>
                                             <span className="slb-title">Lawyers </span>
                                         </a>
                                     </li>
                                     <li className="wow flipInX">
-                                        <a href="javascript:;">
+                                        <a href="#!">
                                             <img src={require('../../../assets/images/slider-b-img3.png')} alt=""/>
                                             <span className="slb-title">Restaurants</span>
                                         </a>
                                     </li>
                                     <li className="wow flipInY">
-                                        <a href="javascript:;">
+                                        <a href="#!">
                                             <img src={require('../../../assets/images/slider-b-img4.png')} alt=""/>
                                             <span className="slb-title">Jobs available</span>
                                         </a>
                                     </li>
                                     <li className="wow flipInX">
-                                        <a href="javascript:;">
+                                        <a href="#!">
                                             <img src={require('../../../assets/images/slider-b-img5.png')} alt=""/>
                                             <span className="slb-title">Looking for work</span>
                                         </a>

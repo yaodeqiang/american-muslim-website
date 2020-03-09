@@ -46,10 +46,10 @@ class Content extends Component {
                                                 <th>Connect:</th>
                                                 <td>
                                                     <ul className="d-flex">
-                                                        <li><a href="#"><img src="images/fb.png" alt="" /></a></li>
-                                                        <li><a href="#"><img src="images/tw.png" alt="" /></a></li>
-                                                        <li><a href="#"><img src="images/ins.png" alt="" /></a></li>
-                                                        <li><a href="#"><img src="images/in.png" alt="" /></a></li>
+                                                        <li><a href="#!"><img src="images/fb.png" alt="" /></a></li>
+                                                        <li><a href="#!"><img src="images/tw.png" alt="" /></a></li>
+                                                        <li><a href="#!"><img src="images/ins.png" alt="" /></a></li>
+                                                        <li><a href="#!"><img src="images/in.png" alt="" /></a></li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -112,9 +112,9 @@ class Content extends Component {
                                                     <div className="col-md-7">
                                                         <div className="content-object">
                                                             <h5>Ayman Elazm</h5>
-                                                            <a className="link-object" href="#">Pediatricians</a>
+                                                            <a className="link-object" href="#!">Pediatricians</a>
                                                             <p>Mobile: 305102651</p>
-                                                            <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                            <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                         </div>
                                                     </div>
                                                 </div>

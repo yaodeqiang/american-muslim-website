@@ -23,9 +23,9 @@ class Content extends Component {
                                                 <div className="col-md-7">
                                                     <div className="content-object">
                                                         <h5>Ayman Elazm</h5>
-                                                        <a className="link-object" href="#">Pediatricians</a>
+                                                        <a className="link-object" href="#!">Pediatricians</a>
                                                         <p>Mobile: 305102651</p>
-                                                        <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                        <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -52,9 +52,9 @@ class Content extends Component {
                                                     <div className="col-md-7">
                                                         <div className="content-object">
                                                             <h5>Ayman Elazm</h5>
-                                                            <a className="link-object" href="#">Pediatricians</a>
+                                                            <a className="link-object" href="#!">Pediatricians</a>
                                                             <p>Mobile: 305102651</p>
-                                                            <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                            <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                         </div>
                                                     </div>
                                                 </div>

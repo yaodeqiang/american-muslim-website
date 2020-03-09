@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../assets/scss/public.scss';
 import './style.scss';
+import SwiperCom from '../swiperAnimate/swiperCom';
 
 class Content extends Component {
     render(){
@@ -15,27 +16,9 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title1">Physicians</h3>
                                         <div className="rows">
                                             <div className="marqee-height">
-                                                {/* <div className="marquee--inner2">
-                                                    <div className="orb">
-                                                        <div className="repead-row">
-                                                            <div className="col-md-5">
-                                                                <div className="img-object">
-                                                                    <img src="images/doctor1.jpg" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-md-7">
-                                                                <div className="content-object">
-                                                                    <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
-                                                                    <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
+                                                <SwiperCom/>
                                             </div>
-                                            <a className="view-all physicians-a" href="#">
+                                            <a className="view-all physicians-a" href="#!">
                                                 View All Physicians
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -59,16 +42,16 @@ class Content extends Component {
                                                             <div className="col-md-7">
                                                                 <div className="content-object">
                                                                     <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
+                                                                    <a className="link-object" href="#!">Pediatricians</a>
                                                                     <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                                    <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div> */}
                                             </div>
-                                            <a className="view-all lawyers-a" href="#">
+                                            <a className="view-all lawyers-a" href="#!">
                                                 View All Lawyers
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -92,16 +75,16 @@ class Content extends Component {
                                                             <div className="col-md-7">
                                                                 <div className="content-object">
                                                                     <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
+                                                                    <a className="link-object" href="#!">Pediatricians</a>
                                                                     <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                                    <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div> */}
                                             </div>
-                                            <a className="view-all restaurants-a" href="#">
+                                            <a className="view-all restaurants-a" href="#!">
                                                 View All Restaurants
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -127,16 +110,16 @@ class Content extends Component {
                                                             <div className="col-md-7">
                                                                 <div className="content-object">
                                                                     <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
+                                                                    <a className="link-object" href="#!">Pediatricians</a>
                                                                     <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                                    <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div> */}
                                             </div>
-                                            <a className="view-all rentals-a" href="#">
+                                            <a className="view-all rentals-a" href="#!">
                                                 View All Rentals
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -160,16 +143,16 @@ class Content extends Component {
                                                             <div className="col-md-7">
                                                                 <div className="content-object">
                                                                     <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
+                                                                    <a className="link-object" href="#!">Pediatricians</a>
                                                                     <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                                    <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div> */}
                                             </div>
-                                            <a className="view-all looking-work-a" href="#">
+                                            <a className="view-all looking-work-a" href="#!">
                                                 View All Looking for work
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -193,16 +176,16 @@ class Content extends Component {
                                                             <div className="col-md-7">
                                                                 <div className="content-object">
                                                                     <h5>Ayman Elazm</h5>
-                                                                    <a className="link-object" href="#">Pediatricians</a>
+                                                                    <a className="link-object" href="#!">Pediatricians</a>
                                                                     <p>Mobile: 305102651</p>
-                                                                    <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                                    <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div> */}
                                             </div>
-                                            <a className="view-all accountants-a" href="#">
+                                            <a className="view-all accountants-a" href="#!">
                                                 View All Accountants
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
                                                 <i className="fa fa-angle-right" aria-hidden="true"></i>
@@ -231,9 +214,9 @@ class Content extends Component {
                                                     <div className="col-md-7">
                                                         <div className="content-object">
                                                             <h5>Ayman Elazm</h5>
-                                                            <a className="link-object" href="#">Pediatricians</a>
+                                                            <a className="link-object" href="#!">Pediatricians</a>
                                                             <p>Mobile: 305102651</p>
-                                                            <a className="mailoto-object" href="#">ayama@yahoo.com</a>
+                                                            <a className="mailoto-object" href="#!">ayama@yahoo.com</a>
                                                         </div>
                                                     </div>
                                                 </div>
