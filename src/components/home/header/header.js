@@ -112,28 +112,36 @@ class Header extends Component {
                                         </Router>
                                     </li>
                                     <li className="wow flipInY">
-                                        <a href="#!">
-                                            <img src={require('../../../assets/images/slider-b-img2.png')} alt=""/>
-                                            <span className="slb-title">Lawyers </span>
-                                        </a>
+                                        <Router>
+                                            <Link to="/details-list">
+                                                <img src={require('../../../assets/images/slider-b-img2.png')} alt=""/>
+                                                <span className="slb-title">Lawyers </span>
+                                            </Link>
+                                        </Router>
                                     </li>
                                     <li className="wow flipInX">
-                                        <a href="#!">
-                                            <img src={require('../../../assets/images/slider-b-img3.png')} alt=""/>
-                                            <span className="slb-title">Restaurants</span>
-                                        </a>
+                                        <Router>
+                                            <Link to="/details-list">
+                                                <img src={require('../../../assets/images/slider-b-img3.png')} alt=""/>
+                                                <span className="slb-title">Restaurants</span>
+                                            </Link>
+                                        </Router>
                                     </li>
                                     <li className="wow flipInY">
-                                        <a href="#!">
-                                            <img src={require('../../../assets/images/slider-b-img4.png')} alt=""/>
-                                            <span className="slb-title">Jobs available</span>
-                                        </a>
+                                        <Router>
+                                            <Link to="/details-list">
+                                                <img src={require('../../../assets/images/slider-b-img4.png')} alt=""/>
+                                                <span className="slb-title">Jobs available</span>
+                                            </Link>
+                                        </Router>
                                     </li>
                                     <li className="wow flipInX">
-                                        <a href="#!">
-                                            <img src={require('../../../assets/images/slider-b-img5.png')} alt=""/>
-                                            <span className="slb-title">Looking for work</span>
-                                        </a>
+                                        <Router>
+                                            <Link to="/details-list">
+                                                <img src={require('../../../assets/images/slider-b-img5.png')} alt=""/>
+                                                <span className="slb-title">Looking for work</span>
+                                            </Link>
+                                        </Router>
                                     </li>
                                 </ul>
                             </div>

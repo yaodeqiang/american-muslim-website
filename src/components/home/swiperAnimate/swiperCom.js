@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Swiper from 'swiper/js/swiper.min.js';
 import 'swiper/css/swiper.min.css';
 // import $ from 'jquery';
@@ -27,25 +28,29 @@ class SwiperCom extends Component {
                 <div className="swiper-wrapper">
                     {this.props.data.map((item, index) => {
                         return (
-                            <div className="swiper-slide" key={index}>
-                                <div className="orb">
-                                    <div className="repead-row">
-                                        <div className="col-md-5">
-                                            <div className="img-object">
-                                                <img src={item.img} alt=""/>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-7">
-                                            <div className="content-object">
-                                                <h5>{item.name}</h5>
-                                                <a className="link-object" href="#!">{item.content}</a>
-                                                <p>Mobile: {item.mobile}</p>
-                                                <a className="mailoto-object" href="#!">{item.email}</a>
+                            <Router key={index}>
+                                <Link to="/details">
+                                    <div className="swiper-slide">
+                                        <div className="orb">
+                                            <div className="repead-row">
+                                                <div className="col-md-5">
+                                                    <div className="img-object">
+                                                        <img src={item.img} alt=""/>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-7">
+                                                    <div className="content-object">
+                                                        <h5>{item.name}</h5>
+                                                        <a className="link-object" href="javascript:;">{item.content}</a>
+                                                        <p>Mobile: {item.mobile}</p>
+                                                        <a className="mailoto-object" href="javascript:;">{item.email}</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </Link>
+                            </Router>
                         )
                     })}
                 </div>
