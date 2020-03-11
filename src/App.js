@@ -12,9 +12,9 @@ class App extends Component {
       <div className="Website">
         <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/details-list" component={DetailsList} />
-            <Route exact path="/details" component={Details} />
+            <Route path="/" component={Home} />
+            <Route path="/details-list" component={DetailsList} />
+            <Route path="/details" component={Details} />
             <Redirect from={"*"} to={'/'} />
           </Switch>
         </Router>
