@@ -140,7 +140,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title1">Physicians</h3>
                                         <div className="rows">
                                             <div className="marqee-height">
-                                                <SwiperCom data={this.state.phyArr}/>
+                                                <SwiperCom data={this.state.phyArr} index={1}/>
                                             </div>
                                             <a className="view-all physicians-a" href="#!">
                                                 View All Physicians
@@ -155,7 +155,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title2">Lawyers </h3>
                                         <div className="rows">
                                             <div className="marqee-height">
-                                                <SwiperCom data={this.state.layArr}/>
+                                                <SwiperCom data={this.state.layArr} index={2}/>
                                             </div>
                                             <a className="view-all lawyers-a" href="#!">
                                                 View All Lawyers
@@ -170,7 +170,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title3">Restaurants</h3>
                                         <div className="rows">
                                             <div className="marqee-height">
-                                                <SwiperCom data={this.state.resArr}/>
+                                                <SwiperCom data={this.state.resArr} index={3}/>
                                             </div>
                                             <a className="view-all restaurants-a" href="#!">
                                                 View All Restaurants
@@ -187,7 +187,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title5">Rentals </h3>
                                         <div className="rows">
                                             <div className="marqee-height2 minus-row">
-                                                <SwiperCom data={this.state.renArr}/>
+                                                <SwiperCom data={this.state.renArr} index={4}/>
                                             </div>
                                             <a className="view-all rentals-a" href="#!">
                                                 View All Rentals
@@ -202,7 +202,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title6">Looking for work </h3>
                                         <div className="rows">
                                             <div className="marqee-height2 minus-row">
-                                                <SwiperCom data={this.state.lookArr}/>
+                                                <SwiperCom data={this.state.lookArr} index={5}/>
                                             </div>
                                             <a className="view-all looking-work-a" href="#!">
                                                 View All Looking for work
@@ -217,7 +217,7 @@ class Content extends Component {
                                         <h3 className="ob-title1-all ob-title7">Accountants </h3>
                                         <div className="rows">
                                             <div className="marqee-height2 minus-row">
-                                                <SwiperCom data={this.state.accountArr}/>
+                                                <SwiperCom data={this.state.accountArr} index={6}/>
                                             </div>
                                             <a className="view-all accountants-a" href="#!">
                                                 View All Accountants
@@ -237,7 +237,7 @@ class Content extends Component {
                                         
                                     </div>
                                     <div className="marqee-height marqee-height-sigbar">
-                                        <SwiperCom data={this.state.realArr}/>
+                                        <SwiperCom data={this.state.realArr} index={7}/>
                                     </div>
                                 </div>
                             </div>

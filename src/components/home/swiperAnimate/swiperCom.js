@@ -6,8 +6,14 @@ import 'swiper/css/swiper.min.css';
 import './style.scss';
 
 class SwiperCom extends Component {
-    componentDidMount() {
-        new Swiper('.vertical-swiper-container', {
+    constructor(props){
+        super(props);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        let index = this.props.index;
+
+        new Swiper('.vertical-swiper-container' + index, {
             direction : 'vertical',
             autoplay: {
                 delay: 4000,
@@ -20,17 +26,17 @@ class SwiperCom extends Component {
             slidesPerView: 4,         
             slidesPerGroup: 4,
         });
-      }
+    }
 
     render(){
         return (
-            <div className="vertical-swiper-container">
+            <div className={`vertical-swiper-container vertical-swiper-container-${this.props.index}`}>
                 <div className="swiper-wrapper">
                     {this.props.data.map((item, index) => {
                         return (
-                            <Router key={index}>
-                                <Link to="/details">
-                                    <div className="swiper-slide">
+                            <div className="swiper-slide">
+                                <Router key={index}>
+                                    <Link to="/details">
                                         <div className="orb">
                                             <div className="repead-row">
                                                 <div className="col-md-5">
@@ -48,9 +54,9 @@ class SwiperCom extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
-                            </Router>
+                                    </Link>
+                                </Router>
+                            </div>
                         )
                     })}
                 </div>
